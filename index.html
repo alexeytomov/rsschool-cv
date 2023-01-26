@@ -8,11 +8,60 @@
     <link href="/styles/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <header>
-        <div class="head">
-            <h1>Tomov Alexey</h1>
-            <!-- <p>email: tomovalexey@gmail.com</p> -->
+    <div class="boxes">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">
+            
+            
+            <h1>
+                <img class="photo" src="images/me.jpg" alt="photo">
+                <span>Tomov Alexey</span>
+            </h1>
+            <p>email: tomovalexey@gmail.com</p>
+            <p>_______________________________________________________</p>
+            <p>I started work with PC since 12 years old. 
+               That time I am remembering very nice, I was obsessed 
+               about programming and learning something new with constancy,
+               which continues to this day.</p>
+            <p>&nbsp</p>
+            <p class="tech">I know such technologies as:
+            <ul>
+                <li> JavaScript</li>
+                <li> C++</li>
+                <li> Python</li>
+                <li> Java</li>
+            </ul></p>
+            <p>_______________________________________________________</p>
+            <pre class="code"><code>
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        int[] result = new int[2];
+    
+        for (int i = 0; i < nums.length - 1; i++ ) {
+            for (int j = 1; j < nums.length; j++) {
+                
+                if (i == j) continue;
+    
+                if (nums[i] + nums[j] == target) {
+                    result[0] = i;
+                    result[1] = j;
+                }
+                
+            }
+        }
+        return result;
+    }
+}
+            </code></pre>
+            <p><strong>Education:</strong> St. Petersburg State University
+               of Telecommunications. prof. M. A. Bonch-Bruevich</p>
+            <br>
+            <p><strong>English:</strong> B1</p>
+            <br>
+
+
         </div>
-    </header>
+        <div class="box box3">Box 3</div>
+     </div>
 </body>
 </html>
